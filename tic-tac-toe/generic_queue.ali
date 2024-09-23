@@ -1,0 +1,40 @@
+V "GNAT Lib v10"
+P ZX
+
+RN
+RV NO_EXCEPTIONS
+RV SPARK_05
+
+U generic_queue%b	generic_queue.adb	bb823073 NE OO PK GE
+
+U generic_queue%s	generic_queue.ads	8fe48706 BN EE NE OO PK GE
+
+D generic_queue.ads	20240923024343 8fe48706 generic_queue%s
+D generic_queue.adb	20240923024342 3466b775 generic_queue%b
+D system.ads		20230707070819 4635ec04 system%s
+G a e
+G c Z s b [generic_queue standard 5 9 none]
+X 1 generic_queue.ads
+3+9 Element_Type 9r49 20r53 22r54 2|8r53 22r54
+4i4 Max_Size{positive} 9r36 2|10r20 16r19 30r20 43r24
+5k9*Generic_Queue 3z9 4z4 27l5 27e18 2|2b14 45l5 45t18
+6X4*Queue_Full 2|11r16
+7X4*Queue_Empty 2|25r16
+9A9*Queue_Array(3+9)<integer> 12r18
+11R9*Queue 16e14 18r27 20r33 22r33 24r29 26r28 2|3r27 8r33 22r33 36r29 41r28
+12a7 Elements{9A9} 2|14m9 28r20
+13i7 Front{integer} 2|28r31 29m9 29r20 30r12 31m12
+14i7 Rear{integer} 2|14r20 15m9 15r19 16r12 17m12
+15i7 Count{integer} 2|10r12 19m9 19r20 24r12 33m9 33r20 38r16 43r16
+18V13*Create{11R9} 2|3b13 6l8 6t14
+20U14*Enqueue 20=22 20>40 2|8b14 20l8 20t15
+20r22 Q{11R9} 2|8b22 10r10 14m7 14r18 15m7 15r17 16r10 17m10 19m7 19r18
+20*40 Element{3+9} 2|8b40 14r29
+22U14*Dequeue 22=22 22<40 2|22b14 34l8 34t15
+22r22 Q{11R9} 2|22b22 24r10 28r18 28r29 29m7 29r18 30r10 31m10 33m7 33r18
+22*40 Element{3+9} 2|22b40 28m7
+24V13*Is_Empty{boolean} 24>22 2|36b13 39l8 39t16
+24r22 Q{11R9} 2|36b22 38r14
+26V13*Is_Full{boolean} 26>21 2|41b13 44l8 44t15
+26r21 Q{11R9} 2|41b21 43r14
+

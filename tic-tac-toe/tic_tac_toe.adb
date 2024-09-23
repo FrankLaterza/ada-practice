@@ -1,8 +1,14 @@
 with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 with Ada.Characters.Handling; use Ada.Characters.Handling;
+with Generic_Queue;
 
 procedure tic_tac_toe is
+	package Integer_Queue is new Generic_Queue(Element_Type => Integer, Max_Size => 3);
+	use Integer_Queue;
+
+	O_queue: Queue;
+	X_queue: Queue;
 	
 	-- enumeration
 	type valid_board_state is ('X', 'x', 'o', 'O', ' ');
@@ -122,6 +128,13 @@ procedure tic_tac_toe is
 		if winner /= NO_WINNER then return winner; end if;
 		return winner;
 	end check_winner;
+
+	procedure handle_queue_over_flow is 
+	begin
+		Put_Line("do something");
+	end handle_queue_over_flow;
+
+	
 	-- make a rocker for player
 	type game_state is (X_TO_MOVE, O_TO_MOVE);
 	current_player_turn: game_state := X_TO_MOVE;
@@ -138,10 +151,12 @@ procedure tic_tac_toe is
 		elsif current_player_turn = X_TO_MOVE then
 			-- TODO: add extra fancy game
 			board(move) := 'X';
+			-- Enqueue(O_Queue, Move);
 			current_player_turn := O_TO_MOVE;
 		elsif current_player_turn = O_TO_MOVE then
 			-- TODO: add extra fancy game
 			board(move) := 'O';
+			-- Enqueue(O_Queue, Move);
 			current_player_turn := X_TO_MOVE;
 		end if;
 		
@@ -181,7 +196,5 @@ begin
 		end if;
 	end loop;
 	-- be nice	
-	New_Line;
 	Put_Line("thanks for playing!");
 end tic_tac_toe;
-
