@@ -1,0 +1,22 @@
+[GENERATED OBJECT FILE]
+b__hello.o
+[PROJECT FILES]
+/usr/share/gpr/_default.gpr
+20200208122156 4ba9d80b489cb580d0805c3f8dbba58e
+[BOUND OBJECT FILES]
+/home/fank/ada/ada-practice/hello-world//hello.o
+[GENERATED SOURCE FILES]
+b__hello.ads
+b__hello.adb
+b__hello.ali
+[RESULTING OPTIONS]
+-L/home/fank/ada/ada-practice/hello-world/
+-L/home/fank/ada/ada-practice/hello-world//
+-L/usr/lib/gcc/x86_64-linux-gnu/10/adalib/
+-shared
+-shared-libgcc
+-lgnat-10
+-ldl
+[RUN PATH OPTION]
+/usr/lib/gcc/x86_64-linux-gnu/10/adalib/
+/usr/lib

@@ -1,0 +1,129 @@
+V "GNAT Lib v10"
+M P W=b
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_ENUMERATION_MAPS
+RV NO_IO
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV SPARK_05
+
+U tic_tac_toe%b		tic_tac_toe.adb		0b226125 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.characters%s	a-charac.ads		a-charac.ali
+W ada.characters.handling%s  a-chahan.adb	a-chahan.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.img_enum_new%s	s-imenne.adb		s-imenne.ali
+Z system.val_char%s	s-valcha.adb		s-valcha.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-charac.ads		20230707070819 2d3ec45b ada.characters%s
+D a-chahan.ads		20230707070819 1601a50f ada.characters.handling%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-inteio.ads		20230707070819 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
+D a-tiinio.ads		20230707070819 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D system.ads		20230707070819 4635ec04 system%s
+D s-conca2.ads		20230707070819 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-imenne.ads		20230707070819 614c06c0 system.img_enum_new%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D s-valcha.ads		20230707070819 b1d7f8f1 system.val_char%s
+D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
+D tic_tac_toe.adb	20240923020028 459c98e3 tic_tac_toe%b
+G a e
+G c Z b b [tic_tac_toe standard 5 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 30|1r6 1r23 2r6 2r31 3r6 3r35
+X 2 a-charac.ads
+16K13*Characters 18e19 30|3r10 3r39
+X 3 a-chahan.ads
+36K24*Handling 159e28 30|3w21 3r50
+67V13*To_Upper{character} 30|172s20
+X 5 a-inteio.ads
+18K13*Integer_Text_IO[10|46] 30|2w10 2r35
+X 9 a-textio.ads
+57K13*Text_IO 727e16 30|1w10 1r27
+264U14*New_Line 30|23s49 27s17 162s9 165s9 184s9
+381U14*Get 30|171s17
+392U14*Put 30|21s25
+465U14*Put 30|24s30 170s17
+508U14*Put_Line 30|23s59 133s25 136s25 161s9 163s9 164s9 166s9 169s17 179s25
+. 185s9
+X 30 tic_tac_toe.adb
+5U11*tic_tac_toe 5b11 186l5 186t16
+8E14 valid_board_state 8e60 13r51 21r45
+8n36 'X'{8E14} 46r44 62r50 78r51 94r51 140r40
+8n41 'x'{8E14} 46r64 62r76 78r78 94r78
+8n46 'o'{8E14}
+8n51 'O'{8E14} 144r40
+8n56 ' '{8E14} 45r41 61r47 77r48 93r48 135r38
+11I17 board_size{integer} 13r36 40r28 56r28 72r29 88r29 132r32
+13A14 board_array(8E14)<integer> 15r16
+15a9 board{13A14} 20r27 21r69 22r33 45r28 46r31 46r51 61r28 62r31 62r57 77r28
+. 78r31 78r58 93r28 94r31 94r58 135r23 140m25 144m25
+18U19 draw_board 18b19 28l13 28t23 174s17
+20i21 it{integer} 21r75 22r28 23r31
+30U19 inc 30b19 30=23 33l13 33t16 46s73 62s85 78s87 94s87
+30i23 num{integer} 32m17 32r24
+36E14 winner_type 36e56 38r49 54r49 70r45 86r46 104r38 105r25 158r17
+36n30 X_WINS{36E14} 51r41 67r41 83r41 99r41 179r67
+36n38 O_WINS{36E14} 51r67 67r67 83r67 99r67
+36n46 NO_WINNER{36E14} 45r57 51r79 61r63 67r79 77r64 83r79 93r64 99r79 105r40
+. 110r38 115r38 119r30 122r30 158r32 178r31
+38V18 check_row{36E14} 38b18 38>28 52l13 52t22 109s35
+38i28 row{integer} 43r34
+39i17 sum{integer} 46m77 46r77 51r28 51r54
+40i17 row_index{11I17} 43m17 44r28 44r41
+44i21 pos{integer} 45r34 46r37 46r57
+54V18 check_col{36E14} 54b18 54>28 68l13 68t22 114s35
+54i28 col{integer} 60r38
+55i17 sum{integer} 62m89 62r89 67r28 67r54
+56i17 col_index{11I17} 60m25 61r34 62r37 62r63
+59i21 col_num{integer} 60r45
+70V18 check_diag_top_left{36E14} 70b18 84l13 84t32 118s27
+71i17 sum{integer} 78m91 78r91 83r28 83r54
+72i17 diag_index{11I17} 76m25 77r34 78r37 78r64
+75i21 diag_num{integer} 76r40
+86V18 check_diag_top_right{36E14} 86b18 100l13 100t33 121s27
+87i17 sum{integer} 94m91 94r91 99r28 99r54
+88i17 diag_index{11I17} 92m25 93r34 94r37 94r64
+91i21 diag_num{integer} 92r44
+104V18 check_winner{36E14} 104b18 124l13 124t25 177s27
+105e17 winner{36E14} 109m25 110r28 110r60 114m25 115r28 115r60 118m17 119r20
+. 119r52 121m17 122r20 122r52 123r24
+108i21 row{integer} 109r45
+113i21 col{integer} 114r45
+126E14 game_state 126e50 127r30
+126n29 X_TO_MOVE{126E14} 127r44 138r45 145r48 169r73
+126n40 O_TO_MOVE{126E14} 141r48 142r45
+127e9 current_player_turn{126E14} 138r23 141m25 142r23 145m25 169r51
+129U19 ttt_turn 129b19 129>28 148l13 148t21 173s17
+129i28 move{integer} 132r20 135r29 140r31 144r31 173r26
+150V18 convert_char_to_int{integer} 150b18 150>38 153l13 153t32 173s34
+150e38 char{character} 152r38
+156e9 player_move{character} 171m21 172r29 173r54
+158e9 winner{36E14} 177m17 178r21 179r58
+
